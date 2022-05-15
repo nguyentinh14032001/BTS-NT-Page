@@ -1,0 +1,8 @@
+header
+Slider
+Content 
+	1. about 
+	2. tour
+	3. contact
+	4. image
+footer
