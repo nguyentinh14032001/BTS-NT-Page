@@ -197,7 +197,8 @@ html{
  */
 #slider {
     position: relative;
-    background:url('/HTMLCSS/Theband/assets/img/map.jpg') top center / cover no-repeat;
+    background:url('https://wallpaperaccess.com/full/801281.jpg') top center / cover no-repeat;
+   
     margin-top: 46px;
     /* padding-top khi có giá trị % thì 50% này là 50% chiều ngang của chính nó */
     padding-top:50%;
