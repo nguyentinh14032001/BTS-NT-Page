@@ -1,0 +1,33 @@
+/* BREAK PON */
+/* PC */
+@media(min-width: 1024px){
+    /* .pc{
+        display: block;
+    } */
+ }
+ /* Tablet */
+ @media(min-width: 740px) and (max-width: 1023px){
+     /* .tablet{
+         display: block;
+     } */
+ }
+ /* Mobie */
+ @media (max-width: 740px){
+    #nav{
+        display: block;
+    }   
+    #nav > li {
+        display:block;
+    }
+    #nav > li:first-child{
+        display:inline-block;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    .search-btn{
+        display: none;
+    }
+
+    
+ }

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+       
         <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+         <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
         <title>BTS</title>
     <body>
         <div id="main">
             <div id="header">
+                
                 <!-- Begin nav -->
                 <ul id="nav">
                     <li><a href="#">Home</a></li>
@@ -27,18 +29,25 @@
                     </li>
                 </ul>
                 <!-- End nav -->
-                <!-- Begin: SearchButton -->
+
+                <!-- moblie menu -->
+                <div class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+
+                   <!-- PC menu -->
                 <div class="search-btn">
                     <input type="text" class="search-input" placeholder="Search...">
                 <i class="search-icon ti-search"></i>
                 </div>
+              
                 <!-- End: SearchButton -->
             </div>
         <div id="slider">
            
             <div class="text-content">
-                <h2 class="text-heading">New York</h2>
-                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+                <h2 class="text-heading">“WooJiHwa”</h2>
+                <div class="text-description">Living without passion is like being dead.</div>
             </div>
         </div>
     <div id="content">
@@ -271,6 +280,35 @@
            modalcontainer.addEventListener('click',function(event){
                event.stopPropagation();
            });
+       </script>
+       <!-- đóng mở menu moblie -->
+       <script>
+            const header = document.getElementById('header');
+            const mobileMenu = document.querySelector('.mobile-menu-btn');
+            console.log(mobileMenu)
+           mobileMenu.addEventListener('click',()=>{
+                    header.classList.toggle('activeheader');
+           });
+        // var headerHeight = header.clientHeight;
+        // mobileMenu.onclick=function(){
+        //     var isClosed = header.clientHeight === headerHeight;
+        //     if(isClosed){
+        //         header.style.height = 'auto'
+        //     }
+        //     else{
+        //         header.style.height = null;
+        //     }
+        // }
+        // tự động đóng menu khi cuộn tới
+        const items = document.querySelectorAll('#nav li a[href*="#"]');
+                console.log(items);
+    for(var i = 0; i<items.length; i++){
+        var itema=items[i];   
+        itema.onclick= function() {
+            //    header.style.height=null;
+            header.classList.toggle('activeheader');
+        }
+    }
        </script>
     </body>
 
