@@ -50,8 +50,16 @@
       width: 60%;
       height: auto;
   }
-  .s-col-full{
-      width: 100%;
+ 
+  .s-col-full,
+  .s-full-width{
+    width: 100% !important;
   }
-    
+  .contact-info{
+      margin-bottom: 16px;
+  }
+  .s-mt-8{
+      margin-top: 8px !important;
+  }
+
  }

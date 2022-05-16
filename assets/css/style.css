@@ -486,10 +486,10 @@ display: inline-block;
 .footer{
     padding: 64px 16px;
     text-align: center;
+   
 }
 .footer .social{
     font-size: 24px;
-    
 }
 .footer .social a{
     color: rgba(0, 0, 0, 0.6);
