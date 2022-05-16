@@ -13,6 +13,20 @@
  }
  /* Mobie */
  @media (max-width: 740px){
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    } 
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 40px;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #header{
+        overflow: hidden;
+     }
     #nav{
         display: block;
     }   
@@ -28,6 +42,16 @@
     .search-btn{
         display: none;
     }
-
+  #content .member-item-mobile{
+      margin-top: 30px;
+      width: 100%;
+  }
+  #content .member-img{
+      width: 60%;
+      height: auto;
+  }
+  .s-col-full{
+      width: 100%;
+  }
     
  }

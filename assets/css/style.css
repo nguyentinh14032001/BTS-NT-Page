@@ -86,7 +86,7 @@ html{
    left: 0;
    right: 0;
    z-index: 1;
-   overflow: hidden;
+  
  
 }
 
@@ -277,7 +277,7 @@ html{
 #content .about-text{
     margin-top: 25px;
     text-align: justify;
-    line-height: 2;
+    line-height: 1.6;
 }
 
 #content .member-list{
@@ -288,13 +288,12 @@ html{
 
 #content .member-name{
     font-size: 15px;
-    font-weight: 700;
-    
-    
+    font-weight: 700; 
+    margin-bottom: 15px;
 }
 
 #content .member-img{
-    margin-top: 15px;
+    
     width: 200px;
     height: 200px;
     border-radius: 4px;
@@ -334,7 +333,7 @@ html{
 }
 .places-list{
   
-    margin-top: 32px; 
+    margin-top: 16px; 
 }
 
 .place-body{

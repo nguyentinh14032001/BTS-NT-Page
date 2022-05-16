@@ -10,7 +10,7 @@
     <body>
         <div id="main">
             <div id="header">
-                
+
                 <!-- Begin nav -->
                 <ul id="nav">
                     <li><a href="#">Home</a></li>
@@ -68,36 +68,36 @@
                 </p>
                 <div class="row member-list">
                    
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">
                           RM
                         </p>
                         <img src="./assets/img/RM6.jpg" alt="" class="member-img">    
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">
                             V
                         </p>
                         <img src="./assets/img/v3.jpg" alt="" class="member-img">    
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">Sugar</p>
                         <img src="./assets/img/sg4.jpg" alt="" class="member-img">    
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">Jungkook</p>
                         <img src="./assets/img/jk21.jpg" alt="" class="member-img">    
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">Jimin</p>
                         <img src="./assets/img/Jmin3.jpg" alt="" class="member-img">    
                     </div>
                     
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">Jin</p>
                         <img src="./assets/img/jin4.jpg" alt="" class="member-img">    
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item-mobile col col-third text-center">
                         <p class="member-name">J-Hope</p>
                         <img src="./assets/img/jh2.jpg" alt="" class="member-img">    
                     </div>
@@ -123,7 +123,7 @@
 
                      <!--place list  -->
                  <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col  s-col-full  col-third mt-16">
                             <img src="./assets/img/tour1.jpg" alt=""class="place-img">
                     
                         <div class="place-body">
@@ -135,7 +135,7 @@
                             <button class="btn js-but-ticket">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col col-third">
+                    <div class="col  s-col-full col-third mt-16">
                         <img src="./assets/img/tour2.jpg" alt="" class="place-img">
                 
                     <div class="place-body">
@@ -147,7 +147,7 @@
                         <button class="btn js-but-ticket">Buy Tickets</button>
                     </div>
                 </div>
-                <div class="col col-third">
+                <div class="col s-col-full col-third mt-16">
                     <img src="./assets/img/tour3.jpg" alt=""class="place-img">
             
                 <div class="place-body">
@@ -304,11 +304,19 @@
                 console.log(items);
     for(var i = 0; i<items.length; i++){
         var itema=items[i];   
-        itema.onclick= function() {
-            //    header.style.height=null;
+        
+       
+        itema.onclick= function(event) {
+            var isPrentMenu= this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+          if(!isPrentMenu){
             header.classList.toggle('activeheader');
         }
-    }
+        else{
+                event.preventDefault();
+        }
+    }}
+
+
        </script>
     </body>
 
