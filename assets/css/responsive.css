@@ -1,18 +1,55 @@
 /* BREAK PON */
 /* PC */
-@media(min-width: 1024px){
+@media(min-width: 64em){
     /* .pc{
         display: block;
     } */
  }
+  /* Tablet and mobile */
+@media(max-width: 64em){
+    
+  
+   
+    #nav .subnav a{
+        
+        padding: 5px 12px;
+    }
+
+    .btn{
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+    .contact-form-btnmobile{
+        font-size: 16px;
+    }
+    .footer .social{
+        font-size:30px;
+    }
+    #footer .social a{
+        margin: 0 8px ;
+    }
+   .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
  /* Tablet */
- @media(min-width: 740px) and (max-width: 1023px){
+ @media(min-width: 46.25em) and (max-width: 63.9375em){
      /* .tablet{
          display: block;
      } */
  }
  /* Mobie */
- @media (max-width: 740px){
+ @media (max-width: 46.1875em){
     #nav .subnav{
         position: initial;
         background-color: #333;
@@ -56,7 +93,8 @@
     width: 100% !important;
   }
   .contact-info{
-      margin-bottom: 16px;
+      margin-bottom: 32px;
+   
   }
   .s-mt-8{
       margin-top: 8px !important;

@@ -65,6 +65,9 @@ html{
     cursor: pointer;
     font-size: 15px;
     border: none;
+    appearance: none;
+   /* áp dụng cho safari khi dùng thẻ input */
+    /* -webkit-appearance: none; */
 }
 .btn:hover{
     background-color: #ccc;
@@ -222,7 +225,7 @@ html{
  */
 #slider {
     position: relative;
-    background:url('https://wallpaperaccess.com/full/801281.jpg') top center / cover no-repeat;
+    background:url('../img/map.jpg') top center / cover no-repeat;
    
     margin-top: 46px;
     /* padding-top khi có giá trị % thì 50% này là 50% chiều ngang của chính nó */
@@ -249,6 +252,7 @@ html{
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 
@@ -334,6 +338,8 @@ html{
 .places-list{
   
     margin-top: 16px; 
+    padding-bottom: 32px;
+   
 }
 
 .place-body{
@@ -360,6 +366,7 @@ font-weight: 600;
 .place-img{
     display: block;
     width:100%;
+
 }
 .place-img:hover{
     opacity: 0.6;
@@ -466,6 +473,13 @@ max-width: calc(100% -32px);
 .contact-info{
     font-size: 18px;
     line-height: 1.6;
+}
+.contact-info a{
+    color: #4f00ef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
 }
 .contact-info i[class*="ti-"] {
 width: 30px;
